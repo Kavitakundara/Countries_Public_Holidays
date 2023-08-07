@@ -1,15 +1,462 @@
-<!DOCTYPE html Access-Control-Allow-Origin: *>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Country Public Holidays</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&family=Open+Sans:wght@600&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Makasar&family=Rajdhani:wght@600;700&display=swap"
+        rel="stylesheet">
+    <title>Tailwind </title>
+  <script type="module" crossorigin src="/assets/index-d2ee31d7.js"></script>
+  <link rel="stylesheet" href="/assets/index-13dce261.css">
 </head>
-<body>
-    <div class="container">
 
-    </div>
+<body>
+    <header class=" bg-fuchsia-950">
+        <div
+            class="flex my-0 m-auto text-white items-center justify-between py-4 bg-fuchsia-950 z-[999] w-full p-5 lg:w-4/5">
+            <div class="w-12">
+                <a href="" class=" flex items-center"><img src="/assets/slack-logo-8ce13479.png" alt="">Slack</a>
+            </div>
+
+            <nav>
+                <ul
+                    class="lg:flex px-5 md:absolute md:mt-0 md:bg-white lg:bg-transparent lg:static  absolute w-full  bg-white top-[-100%] left-0 h-full   nav_links">
+
+                    <li class="lg:hidden text-black w-12 pt-5"> <a href="index.html"
+                            class=" flex items-center text-4xl font-bold"><img src="/assets/slack-logo-8ce13479.png"
+                                alt="">slack</a>
+                    </li>
+                    <li class="px-5 text-black pt-10 font-bold lg:text-white"><a href="javascript:void(0)"></a>Product
+                    </li>
+
+                    <li class="px-5 text-black pt-10 font-bold lg:text-white"><a href="javascript:void(0)"></a>Solutions
+                    </li>
+                    <li class="px-5 text-black pt-10 font-bold lg:text-white"><a
+                            href="javascript:void(0)"></a>Enterprise</li>
+                    <li class="px-5 text-black pt-10 font-bold lg:text-white"><a href="javascript:void(0)"></a>Resources
+                    </li>
+                    <li class="px-5 text-black pt-10  font-bold  lg:text-white pb-10"><a
+                            href="javascript:void(0)"></a>Pricing</li>
+                </ul>
+            </nav>
+            <div class="md:sflex">
+
+                <ul class="md:flex  md:items-center">
+                    <li class="px-5"><a href="javascript:void(0)" class="lg:flex items-center hidden"> <svg width="20"
+                                height="20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m18.78 17.72c.1467.1467.22.3233.22.53 0 .2133-.0733.39-.22.53-.16.1467-.3367.22-.53.22-.2067 0-.3833-.0733-.53-.22l-4.47-4.47c-.6667.54-1.4067.9567-2.22 1.25-.8067.2933-1.65.44-2.53.44-1.36 0-2.61333-.3367-3.76-1.01s-2.05667-1.5833-2.73-2.73-1.01-2.4-1.01-3.76.33667-2.61333 1.01-3.76 1.58333-2.05667 2.73-2.73 2.4-1.01 3.76-1.01 2.6133.33667 3.76 1.01 2.0567 1.58333 2.73 2.73 1.01 2.4 1.01 3.76c0 .88-.1467 1.7267-.44 2.54-.2933.8067-.71 1.5433-1.25 2.21zm-10.28-3.22c1.08667 0 2.0867-.27 3-.81.92-.54 1.65-1.2667 2.19-2.18.54-.92.81-1.92333.81-3.01s-.27-2.08667-.81-3c-.54-.92-1.27-1.65-2.19-2.19-.9133-.54-1.91333-.81-3-.81s-2.09.27-3.01.81c-.91333.54-1.64 1.27-2.18 2.19-.54.91333-.81 1.91333-.81 3s.27 2.09.81 3.01c.54.9133 1.26667 1.64 2.18 2.18.92.54 1.92333.81 3.01.81z"
+                                    stroke="#fff" fill="#fff" stroke-width=".5"></path>
+                            </svg><Span class="pl-10 font-bold text-sm">Sign in</Span></a></li>
+                    <li></li>
+                    <li class=" border-white border-2 px-5 py-3 mr-5 text-sm rounded-md font-semibold lg:block hidden md:hidden">
+                        <a href="javascript:void(0)">TALK TO SALES</a></li>
+                    <li class=" lg:block bg-white text-fuchsia-900 px-5 py-3 text-sm rounded-md font-semibold hidden"><a
+                            href="javascript:void(0)">TRY FOR FREE</a></li>
+                </ul>
+                <button
+                    class="lg:hidden inline-flex items-center justify-center text-white text-2xl h-10 w-10 rounded-md outline-none focus:outline-none">
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="iconn"></ion-icon>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="bg-fuchsia-950 py-20 relative md:flex md: flex-col -z-10">
+            <div class="w-4/5 md:flex md:w-full md:p-5 my-0 m-auto">
+                <div class="w-4/4 lg:w-3/4 ">
+                    <h1 class="lg:text-6xl font-bold text-white md:text-left text-[38px] md:text-[45px] leading-10 text-center">Made
+                        for
+                        people.<span class="text-yellow-500">Built
+                            for productivity.</span></h1>
+                    <p class="text-white py-5 lg:text-lg lg:font-semibold text-center md:text-left text-base ">Connect the right people,
+                        find anything that you
+                        need and automate the rest. That’s work in
+                        Slack, your productivity platform.</p>
+
+                    <div class="flex flex-col items-center lg:flex-row">
+                        <button class="bg-white text-fuchsia-900 lg:px-10 lg:py-5 py-2 px-4 lg:text-sm text-sm font-bold rounded-sm lg:mr-5"> <alg:
+                                href="javascript:void(0)">SIGN UP WITH EMAIL ADDRESS</a></button>
+
+                        <button
+                            class="bg-sky-500 py-2 lg:pr-4 pr-3 lg:text-xs font-semibold rounded-sm text-white  md:px-[4px] mt-5">
+                            <a href="javascript:void(0)" class="flex items-center"><svg version="1.1" height="40"
+                                    width="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    class="LgbsSe-Bz112c bg-white p-2 rounded ml-1">
+                                    <g>
+                                        <path fill="#EA4335"
+                                            d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z">
+                                        </path>
+                                        <path fill="#4285F4"
+                                            d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z">
+                                        </path>
+                                        <path fill="#FBBC05"
+                                            d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z">
+                                        </path>
+                                        <path fill="#34A853"
+                                            d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z">
+                                        </path>
+                                        <path fill="none" d="M0 0h48v48H0z"></path>
+                                    </g>
+                                </svg><span class="pl-3 lg:text-base text-sm lg:px-5
+                                    ">SIGN UP WITH GOOGLE</span></a></button>
+                    </div>
+                    <p class="text-white py-5 text-lg font-semibold hidden">Slack is free to try for as long as you like
+                    </p>
+                </div>
+                <div class="lg:w-3/4 w-full mt-10">
+                    <video width="100%" height="500" autoplay>
+                        <source
+                            src="https://a.slack-edge.com/9436a9f/marketing/img/homepage/e2e-prospects/animations/webm/hero-product-ui.en-IN.webm"
+                            type="video/mp4">
+                        <source
+                            src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/mp4/hero-product-ui.IN.mp4"
+                            type="video/ogg">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#f7ede5] py-10">
+        <div class="text-center">
+            <h1 class="font-bold">TRUSTED BY COMPANIES ALL OVER THE WORLD</h1>
+            <ul class="lg:flex md:flex-row md:flex md:w-4/5 lg:flex-row flex-col py-8 my-0 m-auto w-3/5 justify-between">
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGYAAAAoCAYAAAAMjY9+AAAKg0lEQVR4Ae3bBVTcyvcH8Kl7+wSH5y5VHOru7u7u7oTFoQ+pu7u7u7u7ewvUvUXu/5v5B35hTiC7UO/ecz6HnWwCZe5m7syEstSFlN7KTSpt4yZ52bh7z4cTNu7SY4jHa5Ce4OtpWzfvxco5xVidOhmAGcnMlJMd3KVf0cnBNu6Gq/hKJvHwvmbt7h1q5Tj4F2ApMzPuRNeB1rgLxqBzX/FOTpsXNh7SFAvPvnbAzLTpnmDjauiI4egZ79S3676129AujFE6YAKzZN9wbJsJd8jct50QQRzMd3DvkQ0YKMw0D9o6StmtPaQ9vPPeBzdp36+uXrmBAZiJB/idYu2W+qT8UyGExs7eTW0GzjfpOms37z22jm2zA4MvXpJG8eJSRhT5aWn59A8NX0tyXL5+jxwKG0xLjrthEpOk9MA+F4gBcELlWzAtbN2k1mkdlko1GUu7D1+hYRO3puJ6KRZ3a2tgnwvEaCAVGzA+vnH1crD+/4UhfWD3LVyk34F9BtKeGBTgqW+jY/8sF0StUV9KNxvL247Vwyho3BZq3neeKXfONGCfgbQlxhIreozvMW8jMf1CVpEcZy9Hka2ngUbM2MnbDx49J+eaEcbO0p5hVvgvsE9bGhNj6+4d/raGolqdptHd6Ce0cM1xsvXwpraDFtDrNzG0/+h1+r1MkNHfx9ZdGgdMDyIP1IYxsBRWwFwIgeKQObnPI3SEibAYZsIQsIeUIifUg9GwCObDMHCC9CCGXmI8YYSKF+RmPxaXsuKWi36LNQIJCMSMzIe//q6IDxVtMIr+Khds4trG+46FZ1AuYMlB/A3bgJIRC6vhL1BHbbgMpCEK+kM6EOMfOACk4QVMg9wmJOYPuA6keA6N+Tt8l9jYT7Hq9W+lAxNf568SSj8U8+Ov7TwNqC/jEhPxS8kAaj9kIVVoNYG3vy/qS/2DV5HPyA14zz/FXQFbD6koMC0IOzgIpOMi/A4JURye61wTB13FMgw3gXTMMzIxVrBb+BD1hXQJRV9K6Iwfi/uTZ90R9DM6rN3gBfzYoNA1vKOda0TQlr0XqRCKeeF6I+nk+Tvo8AXkWiuCou4/pZ0Hr8hDF09CXFw8HTh+g7d9R20gOW5HPuYJHPTfaoqPj+fH8J7OukbyA6YF0RpIEQOToTZUh/awFi4Id0sOIZmPIATqQB94CKR4LHy6Rwg/byY0hFZwDkgRDyV0EpMOJgjHQ5MMhdiKX5zQEb+WCkACwvnXJr3m8GO9AlZQEQxFTji+cfd5KlQ1lDzrjaALV6OpHZIgD1OR957S5j0XkAgDtRowT+54JOoybw9EIuS4efcRFUBi+gaupITwilind5duA6YFEQ6kOA9ZQR2ZwUI4VhbiVR3YBtRRWvW+rG/CagJeAymmCUPdz3AFSLFcJzFthJ8zC7IwdeCXPANkKqWGcOhwPmTxuw5DWkUMW9iaUabPwdQWd1/xRmN4+/fSQdQ3aCVJw9fRn2WD9OrMdYbdCGAiRCiQ4il0gp/AArJr1AgxmbeTWYWfBlJsVo4VBVLJD2L8B6R4AumTSUwjeKFqr4NcTAzcMU/TWOx5gbcV9sswVeav5eHME0OfuiZVaz+Zaneentiu0nYSGUZsoGINRwvf23AvuQkAojmQIB6eQTQcBy+h81cJhXYNrBJECvVJjg5AKhs1rjsrnPOtVmKE+vYaqjGt4I+DVXfB7+hAB3Q06gg/1rDHTMpXaRgv5lMXHeDDXP7KobTjwGWq3n6KXHv4sLZ0wwl+fqOes+jh4xe0cdd53u7mu4zevImls5ci+XS549BF9Op1DMnRL3gluWBtE/3gGW/fiXqiSiD3OLe79A0wkXLrbwDScRxwJ/HYAmSCKyDHQCAT2QuJSc4ByKyx4lcSo8ygKrScQL+VCiSv8LX82Pi5e6he1xlURKkl8qe6XIvxfG0yFOeUbT6e15SjZ27xGVkv/+Ukx6kLd8ke7bBJ23j78ZNX5IGJhd/ojaQE9tO24HtNSGy/iYnlw6I6MXkKB3wNTIvyC7WHvRAJTyEWSBACTEjkUzinYxvI0Uec6eldq5OYl2Lh1xrKHpowZCW+/rt8CH1X1Je/dq89gv6tOCxxZtdm0Hxyqz2ct/PieOikrfxOwmSA15XZyw/TonXHqUDVUJ7MKQv380Vp+NTt4s+Mtiwu5QSmB5ENvgUHqAJXgRRnISfMB1JcgzxgTDQAUvkdjA0xMZHgBM+AFA+hYNLEeHgfecubkEhA0jaGQaxfEpPKp9glGo9Jcp6DknTB5ZQeAyhD1K+gFWOEJHyl8ckvD2JkETtJWQiSigRaUdCIxDgpxzsLx3dAdvV2zOz/daiBr9rlDnOqHsaPlUQH/lU2mC8Mu/kspZ9L+PMhL3j8ZirRaAyvG3NXHOGzLJzPF5JnLt6liKk7eLtpn9l0G7Vj+caT/Nr63WbwmvLsxWtq3GuWXpLXpDBd/gUOwg3oDy7KsX+hHUQKv3RG+BmigBR3oDH8Bj9AGVgNj8ET1HFSKOA9ID98B84wAp5AZyMXmN/CEeG9QaqhTBqg3krBDIkPN0HjNsvH+J5XQwxDZVFXYlADijUYTTU6TOV1xTBiPZVHjZBfX7wazYelwWFrSI5L1+/z9phZu3n7xas3co1BQreQEjx5OpuZXsBESieKq/4YeAjPNGZqLSAhxkOccM4TeAAxQIpn8AckRDXxOiVBD4Q1zhuoauSWTFnhZ96G/MqsbEixFIYj1Aw/eZjhd1OhamG8oAPfrPwDCbTHTK6H3zKq2XEqP98R54yeuYsvNPkdhwdnq7aeJv+xm/hdh0kEn9HtOXyFv5fikOgiOQETIaxgsfBLaYmBEMgsDFUL4I3OlswkyAnqCBDWIFr2gZ2RicmgrnuK9ZCZP07GBOD8e3wQxhP9Q1E/vfOu/Prr8CzAtCDSQ10lQSchSvXJPwcLoKxynhjpoDmshfPwSLn2GiyBypAxmetKwAI4AffhKUTBFuiisVgcDIdVxEWtIxyC43BEeV08YS1jeEudzrd0lm04Sb0DV/B2pTaT6NDJGzR5wX5VgdeHx9x+wIyByAFWYAc2vHOMj9xgq1z7LaQDYyIHWCvXWSSTSKYcz6qSLpkJR3bIBlkTv9e37oPshWlzmv8Y49INXmNo4ry9vP1SqTFGfp+X8r8J2Jcq8QUmAWFvITG8hmzYdY76h6zi7YqtJ9G5y5E0af6+xP00PfiQhAP7kiW+sHXsZYFNw3NvZx1jULf5BAKF39gnlzdtivhZAvuSJWnYuvtUR+ek5dk/3132wXMWTKlTdT3u3MrAvnRJG4zSWbumbUjrG7SCEHzTEtNqk67F09RAYPDF0zyo/GckSo2qbSfzh2Lj5uwx8VppuurZi5n2Qdw5btK897a2cZWmWefrnQMYgFmKb8pDCzouFujdkLDtMtRL/kN2YCpmeifIf6ki7/ICvU2oaVdsPL1LAAOBmXEnOY7LZOUu9bHxkKLewiOB61auUq+fHQPzANNmZtLJ8v/8wlqnA4agTeonn/qkGGtcg0cM7b7PG/A1sJSZpfpCC0/JzspFaooEBcFqGzdDtPrJIxK4CkU9GF+b2Rf3cgBmPLP/Az/7oDQnfOuzAAAAAElFTkSuQmCC" alt="COMPANIES"></li>
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,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" alt="COMPANIES"></li>
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAAApCAMAAACWeZL7AAABelBMVEUAAADfACDjACzjACrkACvjACvkACvjACjkACzlACvnACjmACznACvlACzkACvkACvfADDqQGD0n7D////zj6LlACz1oLD6z9f1n7DmEDjxf5XkACviACvjACo9OkA9PUA4OEBAQEA6NUA8OUA9O0A9OkA9O0A+O0A9OkA8OEA8OkA+OkA9OkA9OkA6OkA8OkBAOEA+OkA9OkDiAC08OUA9OUA9OUA+OkDkACk8OkA9OUA7OUD3r73lACo9OUA9OUA9OkA8PEA+OUDlEDg6OkDuX3o8OUD3r7zwb4ftYHvnIEXvcIj1n689OUDwcIf4v8rsUG3pMFPuYHvrQGA9OkA9OkA9OkA8OUA9OEDlACrjACo8OkA8OEA9OUA4OEDkACU+OUA9OkDjACo+OUA+O0A9OUA+O0A9OkDiACv2r73nIUbkACv4vsn2rrzkACvnIEbzj6H1nq7ygJXiACnjACzkACvkACvkACvkACrjACzjACvkACrlACrlACrqiZraAAAAfnRSTlMAEECQv9//QO+fIG9fr4/PEP////9////////voIBgUCAQMG+fr79f/0DPf++fMJAgz99Qr9+gkHCAr3D/n7+PT0Bv/2D/v////////1D////////unrCuYK+wj0HeITABAd6Pz65g/p///+7//3D/////UI++zv5ggN4wrp414j0WAAAEH0lEQVR4AdTStQHAQBQC0FPi7rL/nGlPe/IW+ALip6TSxgKANboQtJQu4bBVLRjVBhHGVZsSCbZlK2eHjJ4r9gFZw0j0TwvXNMFlBI0OrnlZVs70t2DP/VhOuFqSgoZ74jqWG46Ho6bvx2xZMMaKxAA45+5uHMMacwsr3LF7Na7u3p4/t+1z//+PkGkYNnX/3mtLGOQjkwz0e74tTH+6WAllTzaVKXUMP7scMwoILx2GPlSpXKlWau6JJJQ9pSmn1GeqLscGDcQvvM2a9cAnwqOr/iA9pekPUtQPvJ1FG7jdBItW22eio5r+uqOnMH0nF22HYfhbjPfkmPAgo4M+gYIc9AzCktPNzlJwJN7Y0VOY/p6LDgAySCnkmFE0y0PAOPg0Lj8EH++SsnL3UufBN3PPYdaSpiP9oppkOLa1ogHfT4CJrQlP/CA9648o6npxdqZTxSxT6VajaBT/VqKoBGNRFMF4kA7WuUTJ85sJVpSmn/SLNmhLilbTB2jZ7TSWBjUw6FBRYpMAz1SoiUQePdGkucRAdlrdDOI5RuR78pSmU+Z7zxLl+RzN4sHC6oSOLiRWOw2kezzIIVFkINsIpmP87QpRJJ7GSqrkojNfzM7NzRc15+fmFr5YtNqeRLuu647VA9NMOXrbYRpgiNuJrADplgkv2xWVHG8J1wcF4ARYK1I00AAtPFiz6PIXKSTFrOC+VSHK1IQoTV+NOmrIFqUhBGU6pmor6V/OupKite3ubJIosra+LkXX1zfeFlNv2FwycftPwuOKGBsbi/N2aqKEEP2LXg3mcRSWhxR1AaGjrU9RKSo+Sknsb/yt7JplqiLF6E6bOuUfDPDWZTobzXhLiHKRTwP8ezDR/wrN9H/655IUpVZimsDZSuw1VbFobGdUS1FlpgRF3ziAqFjw1eW00K9IUTSIBjKSvJ2SfH1qxXhTEqWRhP1d420qYswu+ybA6wcTvVoQhdZmOvnXTHzdQNcMIUPT8oV4fkod6w1L1/eMqPGrWf5UUUuoiKLUcXVj/MNBRG9AURTXH/+m+ChZ4gbgbNHByK1bAS2eLEr9VRnoBnSeRrdumVa+MR+jsFvFP/SyP4Doh/2icDvdutMvWklTstM6P4QmxACwKKXS3t/kDzMSTewvrvcPIvo+GHq9Homqy73eposxo1s962Wp7PJtdUh1WgOLmgHejwzEWeQBiapOFppJ2mLRu/cK5KI/wfHRS46nQKK0s+Tah5mIlqfWksOD7983Og++6OPhdoW+BmcLixZ5ZHweP3la4NmEGXgOF0MUXry9Jz/BRRGFl3t5bsG5oLTWYuerCZSR6U76g5Jy7M4sl2UYZKAiCZs7k5gG4dB4BkagZleCyqXB6NSkcrhjy8urgM4ctKCau6a0qjy7qqyWu3pQOQwAQPMsM8u8wSsAAAAASUVORK5CYII=" alt="COMPANIES"></li>
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,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" alt="COMPANIES"></li>
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,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" alt="COMPANIES"></li>
+                <li class="px-6 pt-5 md:px-2"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI8AAAAmCAMAAADKrjiHAAAA81BMVEUAAAAwr680ubI1uLE1uLI1uLI0t7E1urMztq80t684t681ta81uLI1uq8yt68yt7I0uLIwt681trE0u7E1ubEzuLE1ubI0uLI0uLI1uLE1uLI2uLE1uLIwt681uLI1t7EztrIzuLE1t681t682ubI2ubM2ubQwsK80uLI0t7M1uLIwsK81uLE1uLMwuq84t681t7E0ubM1ubI0ubI0ubM1uLM1ubI1urM0trI0ubI2t7E1uLE0t681ubIztrI0uLI2uLE1uLI1trE0uLI1uLI0uLIyt681ubI0uLE0ubI2ubI3uLI1t7E1uq82tq80trJAr69b8/xcAAAAUXRSTlMAEO/Pv5+Ab1BAIDD/MGBgcCCQT8+Q76+/39+w/iHeoFABYWCvf18RrkC+EM7PMCEBgI6vfwEBcHHugAFB7lG+rwGPcZ4BYY/Prq5wwDFQcBCSDWtQAAADdElEQVR4Ac3WhZ6jPBQF8BNK0obvtEuZKVP4GNd1d3eX93+aJVzur3TdmX81wU4uiq8x0SC2bjjyCY6F/6gs+mW8AeCpHPozntgBeQLAhCpFP6ZZHLGRAXBUK+hHQrUKYEbl0ZOcygBrVAl6stYtyZwKfUm7h3DBVom+eKr/AaoYfTFUJZJOth9nPP6kgirxVBk+Nfm8aAlZAesRNwz+nE2qlS2q9IfzbM/Iyv+VAzpLF9F+vD47ZJX8lXto7Kj8j+fBrvV/54qYdy+HP57nT5tTRVTo2I2jaG+qecx+wSg+WOQ5jOMjnIzjUwCaXwOc3o+jeiYjPUeolzkzArwtONjzEH6vbtkpPjXjZ3IsWDbOSp5zbeZyqnnOkxs4lIP6wiZZ51ov2diYNpNpSVYruEhxCbXDy2xU+1hmhvzMKqCuUIU804itcinP1bOsUoQfOokjgQyu5e1fXKe6JMlFNYIyfmgLfkEMNSVZDkfDQno3yXKUjB3JtJtneyaFacp0g7w5TMa7OXkLtwsyyiabB4cldU2VwR2S84kPrY32ISwb8Gss1C5ZJiF60eTJ20PdhVYnT1j/XeBe+A61OgCavo2QR1r36lZY9nDAKg3luY/a+TyMQB/CWtYVXOKgZtpI2wR5HAzIcinPYc5qHKr0AA9Jxg2yavL4dgiPEDwmnzydt711sCrFWXbF7UXIDTXWCahNacj5LrOppTxhA6lU5jwXKiN5dMPBM/KU9iIMwWHGrlXJY4EtCt+tTybB2vrwshXPO3lk1A/CWZY09XkxFy/b+sgMryDB+OjpmqRrxrGCCZdYV8o9dJdiDOVJvm5/Y6Agn0u/QTePHED3tFSyZYwN2jwyQ/U6/EahiE6uBrjYDCHhl9ispDBQJg9BbEzJ40iWmbMF0+U8zXn9hnwCYEdmymLe0jxSCVmTHm+hNSD5EkDOb7FYGJGq7F7MV5fzyAUl1F7+irtmkQdvc4rqHYAbFHLSzfktHh3v8yaLl7KZGRuR+yQPHsvxi8BR3E86eXC+kADS3C10Flng62IsSXZtNvmAyWSSSNNZN/oAwNRdzfcI0pJ/MlPWLFQbNcuJkbNZvaj4UM/j2qhb/IaDPp+aP1eiB8WxKY94fnzKIz744eUX/IJbEP2EcvOIyxL0LBllnVAWx8J4N5treY6N+pBy6MFHiyJ5/b5KLo0AAAAASUVORK5CYII=" alt="COMPANIES"></li>
+
+            </ul>
+        </div>
+        <!-- master -->
+
+        <div class="flex lg:flex-row flex-col lg:w-4/5 w-full my-0 mx-auto items-center justify-end mt-5">
+            <div class="lg:w-3/4 w-full">
+                <video width="100%" height="500" autoplay>
+                    <source src="/assets/speed.IN-5d0ae836.webm" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="lg:w-3/4 lg:pl-[76px] md:pl-[76px] w-full p-5">
+                <h1 class="lg:text-5xl lg:font-semibold font-sans text-[28px] font-bold pt-5 leading-9">Move faster with
+                    your tools in one place</h1>
+                <p class="py-5 lg:font-semibold lg:text-lg text-base font-normal leading-6">Automate away routine tasks
+                    with the power of generative AI and
+                    simplify your workflow with all your favorite apps ready to go in Slack.</p>
+                <a href="javascript:void(0)" class="text-blue-600 text-lg hover:underline">Learn more about the Slack
+                    platform ➡️</a>
+            </div>
+        </div>
+
+        <!-- work -->
+
+
+        <div
+            class="flex lg:flex-row flex-col-reverse lg:w-4/5 w-full my-0 mx-auto items-center justify-end lg:pt-32 pt-14">
+            <div class="lg:w-3/4 lg:pr-[193px] w-full p-5 md:pl-[76px]">
+                <h1 class="lg:text-5xl lg:font-semibold font-sans text-[28px] font-bold pt-5 leading-9">Choose how you
+                    want to work</h1>
+                <p class="py-5 lg:font-semibold lg:text-lg text-base font-normal leading-6">In Slack, you’ve got all the
+                    flexibility to work when, where and
+                    how it’s best for you. You can easily chat , send audio and video clips, or join a huddle to talk
+                    things through live.</p>
+                <a href="javascript:void(0)" class="text-blue-600 text-lg hover:underline">Learn more about flexible
+                    communication ➡️</a>
+            </div>
+            <div class="lg:w-3/4 w-full">
+                <video width="100%" height="500" autoplay>
+                    <source src="/assets/work-25e18e20.webm" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+
+        <!-- team -->
+        <div class="flex lg:flex-row flex-col lg:w-4/5 w-full my-0 mx-auto items-center justify-end lg:pt-32 pt-14">
+            <div class="lg:w-3/4 w-full">
+                <video width="100%" height="500" autoplay>
+                    <source src="/assets/team-8e9994e6.webm" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="lg:w-3/4 lg:pl-[76px] w-full p-5 md:pl-[76px]">
+                <h1 class="lg:text-5xl lg:font-semibold font-sans text-[28px] font-bold pt-5 leading-9">Bring your team
+                    together</h1>
+                <p class="py-5 lg:font-semibold lg:text-lg text-base font-normal leading-6">At the heart of Slack are
+                    channels: organised spaces for everyone
+                    and everything that you need for work. In channels, it’s easier to connect across departments,
+                    offices, time zones and even other companies.</p>
+                <a href="javascript:void(0)" class="text-blue-600 text-lg hover:underline">Learn more about channels
+                    ➡️</a>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="w-4/5 my-0 m-auto pt-10 text-center">
+            <h1 class="lg:text-5xl font-bold text-center text-[29px] leading-8">Teams large and small rely on Slack</h1>
+            <p class="py-5 text-center font-medium font-[inherit]">Slack securely scales up to support collaboration at
+                the world’s biggest companies.</p>
+            <button class="bg-[#611f69] py-4 px-7 rounded text-white text-sm font-semibold"><a
+                    href="javascript:void(0)">MEET SLACK FOR
+                    ENTERPRISE</a></button>
+            <button class="text-[#611f69] border-[#611f69] py-3.5 lg:px-7 px-14 rounded border-2 mt-5 "><a
+                    href="javascript:void(0)">TALK TO SALES</a></button>
+            <div class="flex lg:flex-row md:flex-row flex-col py-20 lg:text-left text-center">
+                <div class=" lg:w-1/3 w-full lg:px-24 px-2">
+                    <h2 class="text-[#611f69] lg:text-6xl text-5xl font-bold">85%</h2>
+                    <p class="lg:font-medium text-sm font-normal pt-3">of users say that Slack has improved
+                        communication*</p>
+                </div>
+                <div class=" lg:w-1/3 w-full lg:px-24 px-2 mt-5 md:mt-0">
+                    <h2 class="text-[#611f69] lg:text-6xl text-5xl font-bold">86%</h2>
+                    <p class="lg:font-medium text-sm font-normal pt-3">feel that their ability to work remotely has
+                        improved*</p>
+                </div>
+                <div class=" lg:w-1/3 w-full lg:px-24 px-2 mt-5 md:mt-0">
+                    <h2 class="text-[#611f69] lg:text-6xl text-5xl font-bold">88%</h2>
+                    <p class="lg:font-medium text-sm font-normal pt-3">feel more connected to their teams*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="flex lg:flex-row flex-col w-full my-0 mx-auto items-center justify-end">
+            <div class="lg:w-3/4 w-full ">
+                <video width="100%" height="500" autoplay class="rounded-r-[211px]">
+                    <source src="/assets/Vodafone_08-d97e829b.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="lg:w-3/4 lg:pl-[76px] w-full p-5">
+                <p class="py-5 lg:font-thin lg:text-4xl font-normal text-2xl italic">‘Many technology employees were
+                    gravitating naturally to
+                    Slack. So we followed our users to what has become one of our most important tools.’</p>
+                <small class="text-lg font-semibold">Matt Beal</small>
+                <p class=" font-medium pb-5 text-sm">Director of Technology Strategy and Architecture, Vodafone</p>
+                <a href="javascript:void(0)" class="text-blue-600 text-lg  hover:underline">See more customer stories
+                    ➡️</a>
+            </div>
+        </div>
+        <p class="text-center lg:py-5 p-5 text-xs">* Weighted average. Based on 2,707 survey responses from weekly Slack
+            users in the
+            US, UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
+    </section>
+    <section>
+        <div class="bg-[#f4ede4] py-5">
+            <h2 class="text-center lg:font-semibold lg:text-3xl font-bold text-2xl px-2 leading-7 ">Take a deeper dive
+                into a new way to work</h2>
+            <div class="flex lg:flex-row md:flex-row flex-col py-10 lg:w-4/5 w-full my-0 m-auto">
+                <!-- first -->
+
+                <div class="bg-white lg:w-3/12 w-full p-3 mr-10">
+                    <img src="/assets/promo-state-of-work-d67b79a8.jpg" alt="" class="pb-3">
+
+                    <small class="text-sm font-medium">Report</small>
+                    <h2 class="text-2xl font-bold">The State of Work 2023</h2>
+
+                    <div class="flex justify-between pt-20">
+                        <a href="javascript:void(0)" class="text-blue-500 font-semibold">READ MORE </a>
+                        <a href="javascript:void(0)">➡️</a>
+                    </div>
+                </div>
+
+                <!-- second -->
+
+                <div class="bg-white lg:w-3/12 w-full p-3 mr-10">
+                    <img src="/assets/wtny-resource-tile-b8a9ed8a.jpg" alt="" class="pb-3">
+
+                    <small class="text-sm font-medium">On Demand</small>
+                    <h2 class="text-xl font-bold">Big things are launching. Relive the highlights of World Tour New
+                        York!</h2>
+
+                    <div class="flex justify-between pt-14">
+                        <a href="javascript:void(0)" class="text-blue-500 font-semibold">WATCH NOW </a>
+                        <a href="javascript:void(0)">➡️</a>
+                    </div>
+                </div>
+                <!-- third -->
+
+                <div class="bg-white lg:w-3/12 w-full p-3 mr-10">
+                    <img src="/assets/promo-open-ai-54db7002.jpg" alt="" class="pb-3">
+
+                    <small class="text-sm font-medium">customer Story</small>
+                    <h2 class="text-2xl font-bold">The next big thing? AI for everyone.</h2>
+
+                    <div class="flex justify-between pt-20">
+                        <a href="javascript:void(0)" class="text-blue-500 font-semibold">READ MORE </a>
+                        <a href="javascript:void(0)">➡️</a>
+                    </div>
+                </div>
+                <!-- fourth -->
+
+                <div class="bg-white lg:w-3/12 w-full p-3 mr-10">
+                    <img src="/assets/promo-boost-productivity-dbc73a65.jpg" alt="" class="pb-3">
+
+                    <small class="text-sm font-medium">Webinar</small>
+                    <h2 class="text-2xl font-bold">Top Slack tips to boost productivity</h2>
+
+                    <div class="flex justify-between pt-20">
+                        <a href="javascript:void(0)" class="text-blue-500 font-semibold">WATCH NOW </a>
+                        <a href="javascript:void(0)">➡️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="bg-[#4a154b] lg:py-32 pt-14 pb-28 text-center rounded-b-[46%]">
+            <h3 class="text-white font-bold lg:text-5xl text-3xl lg:pb-10 p-1"> See all that you can accomplish with
+                Slack</h3>
+            <button class="bg-white lg:py-4 lg:px-7 py-4 px-16 mt-4 rounded text-[#611f69] font-semibold"><a
+                    href="javascript:void(0)">TRY FOR
+                    FREE</a></button>
+            <button class="text-white border-white lg:py-3.5 lg:px-7 mt-3 py-4 px-14 rounded border-2"><a
+                    href="javascript:void(0)">TALK TO
+                    SALES</a></button>
+        </div>
+    </section>
+    <!-- footer -->
+    <section>
+        <div class="flex lg:flex-row flex-col py-14 w-4/5 md:w-full md:p-6 my-0 m-auto">
+            <div class=" w-12 mr-32">
+                <img src="/assets/slack-logo-8ce13479.png" alt="">
+            </div>
+            <div class="md:flex md:pt-5 md:w-full md:p-5 md:justify-between">
+                <div class=" lg:w-2/12 w-full">
+                    <h3 class="font-bold text-sm mt-7">WHY SLACK?</h3>
+                    <ul>
+                        <li class="pt-5 text-sm">Slack vs email</li>
+                        <li class="pt-5 text-sm">channels</li>
+                        <li class="pt-5 text-sm">Engagement</li>
+                        <li class="pt-5 text-sm">Scale</li>
+                        <li class="pt-5 text-sm">Watch the demo</li>
+                    </ul>
+                </div>
+                <div class=" lg:w-2/12 w-full">
+                    <h3 class="font-bold text-sm mt-7">PRODUCT</h3>
+                    <ul>
+                        <li class="pt-5 text-sm">Features</li>
+                        <li class="pt-5 text-sm">Integrations</li>
+                        <li class="pt-5 text-sm">Enterprise</li>
+                        <li class="pt-5 text-sm">Solutions</li>
+                    </ul>
+                </div>
+                <div class=" lg:w-2/12 w-full">
+                    <h3 class="font-bold text-sm mt-7">PRICING</h3>
+                    <ul>
+                        <li class="pt-5 text-sm">Slack vs email</li>
+                        <li class="pt-5 text-sm">Subscriptions</li>
+                        <li class="pt-5 text-sm">Paid vs free</li>
+                    </ul>
+                </div>
+                <div class=" lg:w-2/12 w-full">
+                    <h3 class="font-bold text-sm mt-7">RESOURCES</h3>
+                    <ul>
+                        <li class="pt-5 text-sm">Slack vs email</li>
+                        <li class="pt-5 text-sm">Partners</li>
+                        <li class="pt-5 text-sm">Developers</li>
+                        <li class="pt-5 text-sm">Community</li>
+                        <li class="pt-5 text-sm">Apps</li>
+                        <li class="pt-5 text-sm">Blog</li>
+                        <li class="pt-5 text-sm"> Help Centre</li>
+                        <li class="pt-5 text-sm">Events</li>
+
+                    </ul>
+                </div>
+                <div class=" lg:w-2/12 w-full">
+                    <h3 class="font-bold text-sm mt-7">COMPANY</h3>
+                    <ul>
+                        <li class="pt-5 text-sm">About us</li>
+                        <li class="pt-5 text-sm">Leadership</li>
+                        <li class="pt-5 text-sm">News</li>
+                        <li class="pt-5 text-sm">Media kit</li>
+                        <li class="pt-5 text-sm">Careers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="lg:flex lg:flex-row flex-col justify-between lg:w-4/5 w-full my-0 m-auto">
+
+            <ul class="lg:flex md:flex lg:flex-row md:flex-row  flex-col">
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)">Status</a></li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)">Privacy</a></li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)">Terms</a></li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)"
+                        class="flex items-center"><svg fill="none" class="privacy-icon" height="14" viewBox="0 0 30 14"
+                            width="30">
+                            <path clip-rule="evenodd"
+                                d="m7.39998 12.8h6.80002l3.1-11.60005h-9.90002c-3.2 0-5.8 2.6-5.8 5.8 0 3.20005 2.6 5.80005 5.8 5.80005z"
+                                fill="#fff" fill-rule="evenodd"></path>
+                            <path clip-rule="evenodd"
+                                d="m22.6 0h-15.19998c-3.9 0-6.999996 3.1-6.999996 7s3.099996 7 6.999996 7h15.19998c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-20.99998 7c0-3.2 2.6-5.8 5.8-5.8h9.89998l-3.1 11.6h-6.79998c-3.2 0-5.8-2.6-5.8-5.8z"
+                                fill="#06f" fill-rule="evenodd"></path>
+                            <path
+                                d="m24.6001 4.0001c.2.2.2.6 0 .8l-2.1 2.2 2.2 2.2c.2.2.2.6 0 .8s-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0s-.2-.6 0-.8l2.1-2.2-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l2.2 2.2 2.2-2.2c.2-.2.6-.2.8 0z"
+                                fill="#fff"></path>
+                            <path
+                                d="m12.7 4.09995c.2.2.3.6.1.8l-4.2 4.9c-.1.1-.2.2-.3.2-.2.10005-.5.10005-.7-.1l-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l1.8 1.7 3.8-4.5c.2-.2.6-.2.9 0z"
+                                fill="#06f"></path>
+                        </svg> <span class="pl-2">Your Privacy Choices</span></a></li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)">Cookie preferences</a>
+                </li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)">Contact us</a></li>
+                <li class="px-3 font-bold text-sm py-3 md:text-xs"><a href="javascript:void(0)"
+                        class="flex items-center"><svg class="c-locale-new-switcher__globe" width="18" height="18"
+                            viewBox="0 0 100 100">
+                            <path
+                                d="M50.008 5.874c-11.308 0-22.613 4.3-31.219 12.906-17.211 17.211-17.211 45.226 0 62.438 17.211 17.21 45.195 17.21 62.406 0 17.212-17.212 17.243-45.227.032-62.438-8.606-8.606-19.912-12.906-31.22-12.906zm-3.125 6.125h.125v34.969H28.914c.58-10.29 4.095-20.385 10.594-28.157 2.27-2.715 4.757-4.983 7.375-6.812zm6.125 0h.062a38 38 0 0 1 7.407 6.812c6.498 7.772 10.014 17.866 10.593 28.157H53.008v-34.97zm-18.094 2.937c-7.508 8.978-11.557 20.412-12.156 32.032H11.977c.687-8.725 4.343-17.25 11.03-23.938a38.166 38.166 0 0 1 11.907-8.094zm30.219.062a38.176 38.176 0 0 1 11.812 8.063c6.685 6.685 10.369 15.19 11.063 23.906H77.227c-.598-11.59-4.623-23-12.094-31.969zm-53.156 37.97h10.78c.59 11.638 4.638 23.07 12.157 32.062a38.133 38.133 0 0 1-11.875-8.063c-6.7-6.7-10.376-15.258-11.062-24zm16.937 0h18.094V88.03h-.063c-2.644-1.838-5.146-4.135-7.437-6.875-6.512-7.787-10.025-17.876-10.594-28.188zm24.094 0H71.07c-.568 10.31-4.082 20.4-10.593 28.187-2.298 2.747-4.817 5.034-7.47 6.875V52.967zm24.219 0h10.812c-.679 8.741-4.39 17.295-11.094 24A38.07 38.07 0 0 1 65.04 85.06c.01-.011.022-.02.031-.031 7.52-8.992 11.568-20.424 12.157-32.063z">
+                            </path>
+                        </svg><span class="pl-2">Change region</span></a></li>
+            </ul>
+
+            <div class="lg:flex flex-col px-2">
+                <a href="javascript:void(0)" class="flex items-center py-5"><svg class="c-nav--footer__download-icon"
+                        width="19" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.75938 15.7354C3.07813 15.7354 2.45 15.5572 1.875 15.2009C1.3 14.8445 0.84375 14.3641 0.50625 13.7597C0.16875 13.1552 0 12.4966 0 11.784C0 11.135 0.140625 10.5273 0.421875 9.96101C0.709375 9.39471 1.1 8.93021 1.59375 8.56753C1.4875 8.19212 1.43438 7.8167 1.43438 7.44129C1.43438 6.72864 1.60313 6.07008 1.94063 5.46561C2.27813 4.86113 2.73438 4.38391 3.30938 4.03395C3.88438 3.67763 4.50938 3.49947 5.18438 3.49947C5.28438 3.49947 5.43438 3.50583 5.63438 3.51855C6.19063 2.57684 6.93125 1.83238 7.85625 1.28517C8.7875 0.737961 9.7875 0.464355 10.8563 0.464355C11.9625 0.464355 12.9875 0.75705 13.9313 1.34244C14.875 1.92146 15.6219 2.70728 16.1719 3.6999C16.7281 4.69251 17.0063 5.77421 17.0063 6.94498C17.5563 7.40948 17.9844 7.97896 18.2906 8.65343C18.5969 9.3279 18.75 10.0437 18.75 10.8009C18.75 11.6917 18.5375 12.5157 18.1125 13.2729C17.6938 14.0301 17.125 14.6282 16.4063 15.0672C15.6938 15.5126 14.9125 15.7354 14.0625 15.7354H3.75938ZM14.0625 14.3037C14.6562 14.3037 15.2031 14.1478 15.7031 13.836C16.2094 13.5179 16.6094 13.0916 16.9031 12.5571C17.1969 12.0162 17.3438 11.4308 17.3438 10.8009C17.3438 10.1646 17.1969 9.57923 16.9031 9.04475C16.6094 8.5039 16.2156 8.07758 15.7219 7.7658C15.6656 7.73399 15.625 7.69899 15.6 7.66081C15.5813 7.62263 15.5719 7.57173 15.5719 7.5081C15.5719 7.45084 15.575 7.3713 15.5813 7.26949C15.5938 7.16769 15.6 7.06588 15.6 6.96407C15.6 6.04781 15.3875 5.20155 14.9625 4.42527C14.5375 3.64899 13.9594 3.03497 13.2281 2.58321C12.5031 2.12508 11.7125 1.89601 10.8563 1.89601C10.2063 1.89601 9.59063 2.02963 9.00938 2.29688C8.42813 2.55775 7.91875 2.9268 7.48125 3.40402C7.04375 3.88124 6.70625 4.42527 6.46875 5.03611C6.43125 5.13792 6.375 5.18882 6.3 5.18882C6.25625 5.18882 6.2125 5.17609 6.16875 5.15064C5.8625 5.0043 5.53438 4.93112 5.18438 4.93112C4.75938 4.93112 4.36562 5.04247 4.00313 5.26517C3.64687 5.48788 3.3625 5.7933 3.15 6.18143C2.94375 6.56321 2.84063 6.98316 2.84063 7.44129C2.84063 7.74671 2.8875 8.03941 2.98125 8.31937C3.08125 8.59298 3.21875 8.84113 3.39375 9.06383C3.4375 9.11474 3.45938 9.16246 3.45938 9.207C3.45938 9.26427 3.40625 9.30244 3.3 9.32153C2.94375 9.39152 2.62188 9.54423 2.33438 9.77966C2.04688 10.0151 1.81875 10.3078 1.65 10.6577C1.4875 11.0077 1.40625 11.3831 1.40625 11.784C1.40625 12.2421 1.50938 12.6652 1.71563 13.0534C1.92813 13.4352 2.21563 13.7406 2.57812 13.9696C2.94062 14.1923 3.33438 14.3037 3.75938 14.3037H14.0625ZM9.60938 12.3948C9.42188 12.3948 9.25625 12.3216 9.1125 12.1753L6.3 9.32153C6.1625 9.18155 6.09375 9.01611 6.09375 8.82523C6.09375 8.62798 6.1625 8.45936 6.3 8.31937C6.44375 8.17303 6.6125 8.09985 6.80625 8.09985C6.99375 8.09985 7.15625 8.16984 7.29375 8.30983L8.90625 9.94192V5.95237C8.90625 5.74876 8.97188 5.58014 9.10313 5.44652C9.24063 5.30653 9.40938 5.23654 9.60938 5.23654C9.79063 5.23654 9.95625 5.30653 10.1063 5.44652C10.2438 5.57378 10.3125 5.74239 10.3125 5.95237V9.94192L11.9344 8.30983C12.0719 8.16984 12.2344 8.09985 12.4219 8.09985C12.5969 8.09985 12.7688 8.17939 12.9375 8.33846C13.0625 8.45936 13.125 8.61843 13.125 8.81568C13.125 9.01929 13.0563 9.18791 12.9188 9.32153L10.1063 12.1753C9.95 12.3216 9.78438 12.3948 9.60938 12.3948Z"
+                            fill="#1264A3"></path>
+                    </svg><span class="pl-2 font-bold text-blue-600 text-sm">Download Slack</span></a>
+                <ul class="flex justify-between ">
+                    <li class="px-3 font-bold lg:text-sm text-xl"><i class="fab fa-twitter"></i></li>
+                    <li class="px-3 font-bold lg:text-sm text-xl"><i class="fab fa-facebook-f"></i></li>
+                    <li class="px-3 font-bold lg:text-sm text-xl"><i class="fab fa-youtube"></i></li>
+                    <li class="px-3 font-bold lg:text-sm text-xl"><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-4/5 my-0 m-auto py-6 text-xs">
+            <p>©2023 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
+                their respective owners.</p>
+        </div>
+    </section>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    const navlinks = document.querySelector(".nav_links")
+    function onToggleMenu(e) {
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navlinks.classList.toggle('top-[0%]');
+        // document.querySelector(".iconn").style.color="black";
+    };
+
+</script>
+
 </html>
